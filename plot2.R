@@ -31,7 +31,7 @@ BCPD <- aggregate(BC[c("Emissions")], list(year = BC$year), sum)
 ## Define the graphics and plot the data
 png('plot2.png', width=480, height=480)
 plot(BCPD$year, BCPD$Emissions, type = "l", 
-     main = "Total emissions Maryland pollution over years in the US",
+     main = "Total emissions Baltimore City pollution over years in the US",
      xlab = "Year", ylab = "Emissions")
 dev.off()
 
